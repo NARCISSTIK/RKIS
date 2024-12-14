@@ -1,4 +1,4 @@
-﻿namespace A
+namespace A
 {
     internal class Program
     {
@@ -16,7 +16,7 @@
 
         public static bool IsLeapYear(int year)
         {
-            return year % 4 == 0;
+            return year % 400 == 0 || (!(year % 100 == 0) && year % 4 == 0 );
         }
     }
 }
